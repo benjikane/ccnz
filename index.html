@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Turntable — an original competition management workspace for speedcubing events." />
+  <title>Turntable | Competition workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Turntable home"><span class="brand-mark">T</span><span>turntable</span></a>
+      <div class="workspace-picker"><span class="workspace-dot"></span><span><small>Workspace</small><strong>NZ Cubing League</strong></span><span class="chevron">⌄</span></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <p class="nav-label">Workspace</p>
+        <a class="nav-link active" href="#dashboard" data-view="dashboard"><span>⌂</span>Overview</a>
+        <a class="nav-link" href="#competitions" data-view="competitions"><span>◈</span>Competitions</a>
+        <a class="nav-link" href="#people" data-view="people"><span>♙</span>People</a>
+        <a class="nav-link" href="#results" data-view="results"><span>↗</span>Results</a>
+        <p class="nav-label">Operations</p>
+        <a class="nav-link" href="#judging" data-view="judging"><span>✓</span>Judging desk <b class="nav-count">4</b></a>
+        <a class="nav-link" href="#scrambles" data-view="scrambles"><span>⌁</span>Scrambles</a>
+        <a class="nav-link" href="#settings" data-view="settings"><span>⚙</span>Settings</a>
+      </nav>
+      <div class="sidebar-footer"><div class="help-icon">?</div><div><strong>Need a hand?</strong><small>Read the quick guide</small></div></div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar"><button class="mobile-menu" aria-label="Open menu">☰</button><div class="breadcrumbs">NZ Cubing League <span>/</span> <strong>Overview</strong></div><div class="top-actions"><button class="icon-button" aria-label="Notifications">♢<i></i></button><div class="avatar">BK</div></div></header>
+      <section class="page" id="app"></section>
+    </main>
+  </div>
+  <div class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
